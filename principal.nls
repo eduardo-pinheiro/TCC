@@ -1,0 +1,21 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{MDF}]\begingroup Método das Diferenças Finitas\nomeqref {1.0}
+		\nompageref{2, 3}
+  \item [{MDFA}]\begingroup Método das Diferenças Finitas Avançado\nomeqref {1.0}
+		\nompageref{2}
+  \item [{MEF}]\begingroup Método dos Elementos Finitos\nomeqref {1.0}
+		\nompageref{2}
+  \item [{MVF}]\begingroup Método dos Volumes Finitos\nomeqref {1.0}
+		\nompageref{1}
+
+ \nomgroup{S}
+
+  \item [{$\omega$}]\begingroup frequência\nomeqref {1.0}
+		\nompageref{2, 3}
+  \item [{$\rho$}]\begingroup densidade\nomeqref {1.0}\nompageref{2}
+  \item [{$a$}]\begingroup aceleração\nomeqref {1.0}\nompageref{1}
+
+\end{thenomenclature}
