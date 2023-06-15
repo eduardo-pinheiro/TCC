@@ -1,48 +1,49 @@
-%====================================================================
-% Introdução: Escreva logo após o \chapter{Introdução} a texto 
-% de seu trabalho referente a introdução.
-%====================================================================
 \chapter{Metodologia}
 
-\lipsum[1-2]
+\section{Caracterização da pesquisa}
 
-\nomenclature[A]{MVF}{Método dos Volumes Finitos}
-\nomenclature[S]{$a$}{aceleração}
+A pesquisa realizada para este trabalho se enquadra na categoria tecnológica, uma vez que o foco principal é o desenvolvimento e a aplicação de um sistema para avaliar as emoções dos usuários ao interagir com interfaces de software. O objetivo é criar uma ferramenta que possa ser usada para melhorar a experiência do usuário, tornando as interfaces mais intuitivas e agradáveis.
 
-De acordo com Burden \cite{burden} e Leithold \cite{leithold}. 
-Temos ainda os trabalhos de Gooch e Daniel \cite{gooch,daniel}, 
-Santana \cite{santana}. Usando o \emph{gmsh} \cite{gmsh} e 
-referências na internet \cite{wiki:quadrature}.
+Em termos de resultados desejados, a pesquisa é tanto exploratória quanto descritiva. É exploratória porque busca entender melhor como as emoções dos usuários podem ser capturadas e analisadas durante a interação com um software. É descritiva porque procura detalhar o funcionamento do sistema desenvolvido, explicando como ele coleta, analisa e apresenta os dados.
 
-\section{Primeira Seção}
+A análise e o tratamento dos dados serão realizados de forma quantitativa e qualitativa. A abordagem quantitativa será usada para medir as emoções dos usuários, utilizando métricas específicas para quantificar diferentes aspectos das emoções. A abordagem qualitativa, por outro lado, será usada para interpretar os resultados, fornecendo percepções sobre como as emoções dos usuários influenciam sua interação com o software.
 
-\lipsum[3-4]
+Quanto aos procedimentos técnicos adotados, o delineamento da pesquisa envolve várias etapas. Primeiro, foi realizada uma pesquisa bibliográfica para entender o estado atual do campo e identificar as lacunas que o sistema proposto poderia preencher. Em seguida, o sistema foi desenvolvido, incluindo a coleta de emoções do usuário, a geração de gráficos e a refatoração dos softwares desenvolvidos. Finalmente, o sistema foi validado por meio de experimentos, que envolveram a interação dos usuários com diferentes softwares e a análise de suas emoções durante essa interação.
 
-\nomenclature[A]{MEF}{Método dos Elementos Finitos}
-\nomenclature[S]{$\rho$}{densidade}
+\section{Metodologia de pesquisa}
 
-\section{Segunda Seção}
+Primeiramente, realizou-se uma pesquisa bibliográfica para compreender o estado atual do campo de pesquisa e identificar lacunas que permitissem a geração de um conteúdo acadêmico relevante. Esta etapa envolveu a revisão de uma variedade de fontes, incluindo artigos de periódicos, livros, relatórios de conferências e outras publicações relevantes. As mais significativas para a construção deste artigo foram "O Emocard na avaliação da interação do usuário no WebGD", realizado por Angela R. B. Flores \cite{3}, e “Emotions Revealed”, realizado por P. Ekman \cite{5}.
 
-\lipsum[5-6]
+A pesquisa “O Emocard na avaliação da interação do usuário no WebGD” \cite{5} foi particularmente relevante na elaboração da metodologia deste trabalho. Já “Emotions Revealed” \cite{3} forneceu o instrumental para uma nova abordagem em relação à pesquisa utilizada como referência, que é a utilização do Facial Action Coding System (FACS) \cite{5} na identificação das emoções dos usuários, em vez do Emocard.
 
-\nomenclature[A]{MDF}{Método das Diferenças Finitas}
-\nomenclature[S]{$\omega$}{frequência}
-\nomenclature[A]{MDFA}{Método das Diferenças Finitas Avançado}
+Após a pesquisa bibliográfica, desenvolveu-se um sistema que possibilitasse a avaliação das emoções do usuário utilizando a metodologia FACS. Este software foi denominado "Emotion Analytics”.
 
-\section{Primeira Seção}
+Com o software desenvolvido, iniciou-se a pesquisa. Foram realizados experimentos com três sites diferentes: o jogo Scary Maze \cite{18}, o site de notícias G1 Globo \cite{19} e a plataforma de vídeos Youtube \cite{20}.
 
-\lipsum[3-4]
+No experimento com o jogo Scary Maze \cite{18}, analisaram-se as emoções de 10 usuários enquanto utilizavam a aplicação, um jogo com o objetivo de surpreender o usuário com a aparição de um monstro ao final do percurso. O experimento foi realizado com os colaboradores da empresa Ploomes, que já haviam jogado o jogo antes e sabiam da aparição do monstro ao final do percurso.
 
-\nomenclature[A]{MEF}{Método dos Elementos Finitos}
-\nomenclature[S]{$\rho$}{densidade}
+No experimento com o site de notícias G1 Globo \cite{19}, 30 usuários foram submetidos ao teste de forma virtual, usando seus próprios computadores no ambiente de sua preferência. Os usuários foram instruídos a entrar na página inicial do site G1, clicar na notícia que mais lhes chamasse a atenção e ler a mesma até o fim.
 
-\section{Segunda Seção}
+No experimento com a plataforma de vídeos Youtube \cite{20}, 30 usuários foram submetidos ao teste de forma virtual, usando seus próprios computadores no ambiente de sua preferência. Os usuários foram instruídos a entrar no site, realizar login em suas contas, e após isso, clicar em um vídeo de sua preferência e assistir o mesmo até o fim.
 
-\lipsum[5-6]
+Após a coleta de dados referentes à emoção dos usuários enquanto utilizavam os sistemas, como frequência, intensidade e duração, os mesmos foram avaliados nas perspectivas de incidência (porcentagem dos testes em que a emoção foi registrada pelo algoritmo com mais de 80\% de precisão) e tempo (porcentagem do tempo de registro da emoção em todos os testes).
 
-\nomenclature[A]{MDF}{Método das Diferenças Finitas}
-\nomenclature[S]{$\omega$}{frequência}
+\section{Uso do software construído na pesquisa}
 
-\section{Terceira Seção}
+O software desenvolvido foi nomeado como “Emotion Analytics" e é uma peça fundamental para a pesquisa por ser a ferramenta que permite a coleta e análise das emoções dos usuários durante a interação com diferentes sistemas. A importância do Emotion Analytics reside na sua capacidade de fornecer instrumental para coleta das emoções, possibilitando a obtenção de percepções valiosas sobre a experiência do usuário, que podem ser usadas para melhorar a interface e a usabilidade dos sistemas testados.
 
-\lipsum{10}
+Na pesquisa, o Emotion Analytics foi utilizado de várias maneiras. Primeiramente, foi usado para coletar dados referente as emoções dos usuários enquanto eles interagiam com três sistemas diferentes: o jogo Scary Maze \cite{18}, o site de notícias G1 Globo \cite{19} e a plataforma de vídeos Youtube \cite{20}. Os usuários foram instruídos a usar esses sistemas enquanto o Emotion Analytics registrava suas emoções através da webcam do computador. Os dados coletados incluíam a frequência, intensidade e duração das emoções expressas pelos usuários.
+
+No início do projeto, foram desenvolvidos dois softwares distintos: um software de coleta de emoções do usuário durante o uso de um aplicativo e um gerador de gráficos que utilizava os dados fornecidos pelo primeiro software para criar visualizações dos resultados.
+
+O software de coleta de emoções tinha como objetivo identificar as emoções básicas do usuário (felicidade, nojo, raiva, medo, desprezo e tristeza) \cite{5} enquanto ele utilizava um aplicativo. Para isso, foi utilizada a API Affectiva \cite{8}, que processava dados de imagem provenientes da webcam e exportava as emoções em formato JSON \cite{21}.
+
+Já o gerador de gráficos era uma ferramenta complementar que processava os documentos JSON \cite{21} gerados pelo software de coleta de emoções. Esse programa realizava uma varredura nos documentos para gerar gráficos, como o gráfico de tempo (que apresentava a porcentagem do tempo de registro das emoções em todos os testes) e o gráfico de incidência (que apresentava a porcentagem dos testes em que a emoção foi registrada pelo algoritmo com mais de 80% de precisão).
+
+Ao longo da pesquisa, o Emotion Analytics evoluiu significativamente. A refatoração dos softwares permitiu a continuidade da pesquisa mesmo diante das restrições impostas pela pandemia de COVID-19. Nessa fase, o sistema foi adaptado para possibilitar a participação remota dos usuários por meio de um navegador, agilizando o processamento e armazenamento dos dados em um servidor na nuvem. Além disso, o código fonte do Emotion Analytics foi disponibilizado de forma pública no GitHub \cite{22}\cite{23}, tornando-o um projeto de código aberto \cite{24}.
+
+Cabe destacar que a pesquisa recebeu reconhecimento ao ter um artigo apresentado no "21º Simpósio de Iniciação Científica e Tecnológica da Faculdade de Tecnologia de São Paulo" \cite{25}. Isso credibiliza os resultados obtidos no experimento de validação do sistema, além de contribuir para a disseminação dos conhecimentos gerados.
+
+Nesse contexto, o Emotion Analytics demonstra seu valor como uma ferramenta confiável e eficaz para a análise das emoções dos usuários. Sua disponibilidade como projeto de código aberto e a publicação do código-fonte no GitHub \cite{22}\cite{23} promovem a transparência, incentivam a colaboração e facilitam a replicação da pesquisa por outros interessados na área.
+
+Dessa forma, o Emotion Analytics desempenha um papel essencial na pesquisa, fornecendo um meio robusto e acessível para a coleta e análise das emoções dos usuários, contribuindo para o avanço do conhecimento científico nessa área.
