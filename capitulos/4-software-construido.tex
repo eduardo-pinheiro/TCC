@@ -55,7 +55,19 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+Ao acessar a aplicação, o usuário é direcionado para a tela inicial, conhecida como tela Home. Essa tela tem como objetivo principal exibir uma lista de todos os testes realizados até o momento. Cada teste é representado por uma célula contendo o nome do tipo de teste e o nome da pessoa que o realizou.
+
+Na parte esquerda da tela, há botões fixos que permitem navegar entre as diferentes seções da aplicação. O botão "Home" retorna à tela inicial, o botão "Tipo de Teste" leva o usuário para a lista de tipos de teste cadastrados, e o botão "Pessoas" exibe a lista de pessoas cadastradas no sistema.
+
+No canto direito da tela, há um grupo de botões. Os botões superiores permitem cadastrar um novo usuário e criar um novo tipo de teste. O botão inferior permite iniciar um novo teste. Esses botões estão presentes em todas as telas da aplicação, garantindo acesso rápido e fácil às funcionalidades principais do sistema.
+
 \subsection{Tipos de teste}
+
+Ao clicar no botão "Tipos de Teste" (ícone de recipiente de laboratório), a tela exibe as mesmas células da tela anterior, porém com um conteúdo diferente. Agora, cada célula representa um tipo de teste e exibe o título e o objetivo desse teste.
+
+O tipo de teste é o cadastro de uma interface específica que desejamos analisar, juntamente com um objetivo previamente definido para essa análise. Por exemplo, poderíamos cadastrar um tipo de teste chamado "Teste do YouTube" com o objetivo de "analisar as reações do usuário ao descobrir o que está em alta no YouTube".
+
+Uma vez que um tipo de teste é cadastrado, qualquer usuário pode realizar esse teste e gerar seus próprios resultados ao navegar na interface especificada. Essa funcionalidade permite a realização de análises personalizadas e a obtenção de dados relevantes sobre a experiência do usuário em diferentes interfaces.
 
 \subsection{Pessoas}
 
@@ -66,6 +78,11 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+No canto esquerdo da tela, há o botão "Pessoas", que ao ser clicado, exibe na tela uma lista de todos os usuários cadastrados no sistema. Cada usuário é representado por uma célula contendo seu nome e e-mail.
+
+Ao clicar em um usuário específico, a tela é atualizada para exibir informações mais detalhadas. São apresentados o nome completo do usuário, seu e-mail, data de nascimento e uma lista dos testes realizados por ele. Essas informações fornecem uma visão mais abrangente sobre cada usuário e suas atividades no sistema.
+
+\clearpage
 \subsection{Cadastro de usuário}
 
 \begin{figure}[h]
@@ -75,6 +92,9 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+No canto superior direito da tela, há um conjunto de dois botões que são revelados quando clicamos no ícone "+". Um desses botões é destinado ao cadastramento de uma nova pessoa no sistema. Ao clicar nesse botão, um formulário é aberto, permitindo a coleta dos dados do usuário. O formulário contém campos para inserir o nome, e-mail e data de nascimento da pessoa. Essas informações são essenciais para o cadastro adequado do usuário no sistema.
+
+\clearpage
 \subsection{Cadastro de tipo de teste}
 
 \begin{figure}[h]
@@ -84,6 +104,9 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+O outro botão presente nesse conjunto é o botão "Novo Teste". Ao clicar nele, um formulário é aberto para o cadastramento de um novo tipo de teste, conforme mencionado anteriormente. Nesse formulário, são disponibilizados campos para inserir o título do teste, a URL do site a ser analisado e o objetivo específico desse teste. Essas informações são importantes para definir o escopo e a finalidade do teste a ser realizado.
+
+\clearpage
 \subsection{Inicio do teste}
 
 \begin{figure}[h]
@@ -92,6 +115,10 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
   \includegraphics[width=0.7\textwidth]{5}
 \end{figure}
 \FloatBarrier
+
+No canto inferior direito da tela, encontra-se o botão "Iniciar Teste" representado pelo ícone de um foguete. Ao clicar nesse botão, é iniciada a análise da interface selecionada. Antes disso, o usuário deve escolher o tipo de teste que deseja realizar e informar qual pessoa está executando o teste.
+
+Após clicar em "Iniciar Teste", o usuário é redirecionado para a URL cadastrada no tipo de teste selecionado anteriormente. Durante o teste, a experiência é semelhante à navegação normal no site, enquanto a webcam captura o rosto da pessoa registrando suas emoções ao longo da navegação. O teste pode ser finalizado a qualquer momento por meio do botão "Finalizar" localizado no canto inferior direito da tela.
 
 \subsection{Relatórios}
 
@@ -102,9 +129,15 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+Ao concluir o teste, o sistema apresenta um gráfico de barras que exibe as emoções detectadas durante a navegação, representadas em porcentagem. Além disso, são fornecidas informações sobre o participante do teste. As emoções contempladas no gráfico são: raiva, desprezo, nojo, medo, felicidade e tristeza. Essas informações fornecem uma visão geral das emoções experimentadas pelo participante durante a interação com a interface analisada.
+
 \section{Diagramas do sistema}
 
+Os diagramas a seguir têm como objetivo fornecer uma visão mais clara e abrangente do sistema, seguindo as técnicas indicadas pelo Project Management Institute (PMI) \cite{31}. Esses diagramas são ferramentas valiosas para a representação visual das diferentes partes e interações do sistema, permitindo uma compreensão mais fácil e organizada das informações.
+
 \subsection{Modelo de Entidade e Relacionamento do sistema \cite{26}}
+
+O Modelo Entidade-Relacionamento (MER) é um diagrama que representa a estrutura lógica de um banco de dados, mostrando as entidades, seus atributos e os relacionamentos entre elas. Ele é útil para visualizar a organização dos dados e as conexões entre as entidades, auxiliando no projeto e implementação do sistema de gerenciamento de dados.
 
 \begin{figure}[h]
   \caption{Diagrama de Modelo de Entidade e Relacionamento do sistema}
@@ -113,7 +146,10 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+\clearpage
 \subsection{Diagrama de casos de uso \cite{27}}
+
+O Diagrama de Caso de Uso é uma representação visual das funcionalidades e interações do sistema a partir da perspectiva do usuário. Ele mostra os atores (usuários, sistemas externos, dispositivos, etc.) e os casos de uso, que descrevem as interações entre o sistema e os usuários. Esse diagrama é útil para entender os requisitos e as principais funcionalidades do sistema.
 
 \begin{figure}[h]
   \caption{Diagrama de casos de uso do sistema}
@@ -122,7 +158,10 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+\clearpage
 \subsection{Diagrama de classes \cite{27}}
+
+O diagrama de classes é uma representação visual das classes, seus atributos e métodos, bem como os relacionamentos entre as classes. Ele fornece uma visão abrangente da estrutura do sistema, mostrando como as classes interagem entre si e quais são suas propriedades. Esse diagrama é fundamental para o design orientado a objetos, auxiliando no desenvolvimento e na compreensão do sistema de software.
 
 \begin{figure}[h]
   \caption{Diagrama de classes do sistema}
@@ -131,7 +170,10 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \end{figure}
 \FloatBarrier
 
+\clearpage
 \subsection{Diagramas de sequência \cite{28}}
+
+O Diagrama de Sequência é utilizado para representar a interação entre os objetos do sistema ao longo do tempo. Ele mostra a ordem das mensagens trocadas entre os objetos e como eles colaboram para realizar uma determinada funcionalidade. Esse diagrama é útil para entender o fluxo de execução e a comunicação entre os objetos do sistema.
 
 \begin{figure}[h]
   \caption{Diagrama de sequência de criação, edição, leitura e deleção do endpoint TestType do sistema}
@@ -183,6 +225,8 @@ O sistema proposto é projetado para ser acessado e utilizado em computadores, n
 \FloatBarrier
 
 \subsection{Diagramas de máquina de estado \cite{30}}
+
+O diagrama de máquina de estados é uma representação visual que descreve o comportamento de um objeto ou sistema em diferentes estados e as transições entre esses estados. Ele mostra como um objeto ou sistema responde a eventos e como seu estado muda ao longo do tempo. O diagrama de máquina de estados é composto por estados, transições, eventos e ações, e é útil para modelar o comportamento complexo de sistemas que possuem diferentes estados e interações entre eles. Ele permite uma compreensão clara do fluxo de controle e das possíveis sequências de eventos que podem ocorrer em um sistema.
 
 \begin{figure}[h]
   \caption{Diagrama de maquina de estado para cadastro de pessoa no sistema}
