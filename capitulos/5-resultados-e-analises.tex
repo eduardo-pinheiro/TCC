@@ -1,48 +1,60 @@
-%====================================================================
-% Introdução: Escreva logo após o \chapter{Introdução} a texto 
-% de seu trabalho referente a introdução.
-%====================================================================
 \chapter{Resultados e análises}
 
-\lipsum[1-2]
+Neste capítulo, serão apresentados os resultados obtidos a partir dos experimentos e validação realizados com o sistema Emotion Analytics. Os dados coletados fornecem insights valiosos sobre as emoções dos usuários durante a interação com diferentes interfaces de aplicativos. Além disso, será discutida a relevância dos resultados e sua contribuição para a área de design de interfaces.
 
-\nomenclature[A]{MVF}{Método dos Volumes Finitos}
-\nomenclature[S]{$a$}{aceleração}
+\section{Experimentos e Validação}
 
-De acordo com Burden \cite{burden} e Leithold \cite{leithold}. 
-Temos ainda os trabalhos de Gooch e Daniel \cite{gooch,daniel}, 
-Santana \cite{santana}. Usando o \emph{gmsh} \cite{gmsh} e 
-referências na internet \cite{wiki:quadrature}.
+Os experimentos foram conduzidos seguindo a metodologia descrita no capítulo “3 Metodologia” desta monografia. Três tipos de teste foram realizados: o jogo Scary Maze \cite{18}, o site de notícias G1 Globo \cite{19} e a plataforma de vídeos YouTube \cite{20}. Cada teste teve a participação de um grupo de usuários, os quais tiveram suas emoções coletadas pelo sistema Emotion Analytics enquanto interagiam com as respectivas interfaces.
 
-\section{Primeira Seção}
+Os resultados obtidos foram analisados quanto à incidência e tempo de registro das emoções em cada teste. A seguir, são apresentados os resultados individuais para cada experimento:
 
-\lipsum[3-4]
+\subsection{Experimento de validação com o jogo Scary Maze \cite{18}}
 
-\nomenclature[A]{MEF}{Método dos Elementos Finitos}
-\nomenclature[S]{$\rho$}{densidade}
+\begin{enumerate}
+  \item A emoção "Felicidade" teve 100\% de incidência nos testes com mais de 80\% de precisão e representou 36,72\% do tempo de teste.
+  \item A emoção "Nojo" teve 60\% de incidência nos testes com mais de 80\% de precisão e representou 2,25\% do tempo de teste.
+  \item A emoção "Medo" não teve incidência nos testes com mais de 80\% de precisão, mas representou 1,42\% do tempo de teste em qualquer precisão.
+  \item A emoção "Raiva" teve incidência em 10\% dos testes com mais de 80\% de precisão e representou 0,44\% do tempo de teste.
+  \item A emoção "Desprezo" teve incidência em 20\% dos testes com mais de 80\% de precisão e representou 0,35\% do tempo de teste.
+  \item A emoção "Tristeza" não teve incidência nos testes com mais de 80\% de precisão, mas representou 0,06\% do tempo de teste em qualquer precisão.
+\end{enumerate}
 
-\section{Segunda Seção}
+\subsection{Experimento de validação com o site G1 Globo \cite{19}}
 
-\lipsum[5-6]
+\begin{enumerate}
+  \item A emoção "Felicidade" teve 7\% de incidência nos testes com mais de 80\% de precisão e representou 1,82\% do tempo de teste.
+  \item A emoção "Nojo" teve 60\% de incidência nos testes com mais de 80\% de precisão e representou 3,26\% do tempo de teste.
+  \item A emoção "Medo" teve 55\% de incidência nos testes com mais de 80\% de precisão e representou 4,32\% do tempo de teste em qualquer precisão.
+  \item A emoção "Raiva" teve incidência em 10\% dos testes com mais de 80\% de precisão e representou 20,35\% do tempo de teste.
+  \item A emoção "Desprezo" teve incidência em 15\% dos testes com mais de 80\% de precisão e representou 2,89\% do tempo de teste.
+  \item A emoção "Tristeza" teve 57\% de incidência nos testes com mais de 80\% de precisão e representou 2,18\% do tempo de teste.
+\end{enumerate}
 
-\nomenclature[A]{MDF}{Método das Diferenças Finitas}
-\nomenclature[S]{$\omega$}{frequência}
-\nomenclature[A]{MDFA}{Método das Diferenças Finitas Avançado}
+\subsection{Experimento de validação com o site YouTube \cite{20}}
 
-\section{Primeira Seção}
+\begin{enumerate}
+  \item A emoção "Felicidade" teve 77\% de incidência nos testes com mais de 80\% de precisão e representou 25,54\% do tempo de teste.
+  \item A emoção "Nojo" teve 14\% de incidência nos testes com mais de 80\% de precisão e representou 1,56\% do tempo de teste.
+  \item A emoção "Medo" não teve incidência nos testes com mais de 80\% de precisão, mas representou 1,84\% do tempo de teste em qualquer precisão.
+  \item A emoção "Raiva" teve incidência em 5\% dos testes com mais de 80\% de precisão e representou 0,87\% do tempo de teste.
+  \item A emoção "Desprezo" teve incidência em 21\% dos testes com mais de 80\% de precisão e representou 7,16\% do tempo de teste.
+  \item A emoção "Tristeza" não teve incidência nos testes com mais de 80\% de precisão, mas representou 0,03\% do tempo de teste em qualquer precisão.
+\end{enumerate}
 
-\lipsum[3-4]
+\section{Análise dos Resultados}
 
-\nomenclature[A]{MEF}{Método dos Elementos Finitos}
-\nomenclature[S]{$\rho$}{densidade}
+Os resultados dos experimentos revelam informações importantes sobre as emoções dos usuários durante a interação com as diferentes interfaces. Cada teste apresentou uma predominância de uma emoção específica, indicando tendências e traços da experiência de uso das aplicações.
 
-\section{Segunda Seção}
+No experimento com o jogo Scary Maze \cite{18}, foi observada uma alta incidência e tempo da emoção "Felicidade", sugerindo que os colaboradores se divertiram com o jogo. Além disso, a incidência da emoção "Nojo" pode estar relacionada à imagem do monstro apresentada ao final do percurso no jogo.
 
-\lipsum[5-6]
+No experimento com o site de notícias G1 Globo \cite{19}, a predominância da emoção "Raiva" em 82\% dos casos com mais de 80\% de precisão e em 20,35\% do tempo de teste, juntamente com as altas incidências das emoções "Nojo", "Medo" e "Tristeza", indica que o conteúdo das notícias apresentadas na tela inicial do site gerou sentimentos negativos e possivelmente desconfortantes nos usuários.
 
-\nomenclature[A]{MDF}{Método das Diferenças Finitas}
-\nomenclature[S]{$\omega$}{frequência}
+No experimento com o site YouTube \cite{20}, a predominância da emoção "Felicidade" em 77\% dos casos com mais de 80\% de precisão e em 25,54\% do tempo de teste sugere que os usuários ficaram satisfeitos ao assistir ao vídeo selecionado. Esse resultado pode estar relacionado ao fato de que eles estavam logados em suas contas, o que proporcionou a exibição de vídeos relacionados às suas preferências individuais.
 
-\section{Terceira Seção}
+Essas conclusões baseadas nos dados obtidos nos experimentos contribuem para uma melhor compreensão das emoções dos usuários durante a interação com interfaces de aplicativos.
 
-\lipsum{10}
+\section{Publicação do Artigo e Código Fonte Aberto}
+
+Cabe ressaltar que os resultados obtidos neste trabalho foram apresentados no "21º Simpósio de Iniciação Científica e Tecnológica da Faculdade de Tecnologia de São Paulo" \cite{25}. A publicação desse artigo científico reforça a credibilidade e relevância dos resultados encontrados, contribuindo para a disseminação do conhecimento na área.
+
+Além disso, é importante destacar que o código fonte do sistema Emotion Analytics está disponível de forma aberta em um repositório do GitHub \cite{22}\cite{23}. Essa abertura possibilita que outros pesquisadores e desenvolvedores tenham acesso ao código e possam contribuir para sua evolução e aprimoramento, fortalecendo a colaboração e o avanço na área de análise de emoções em interfaces de aplicativos.
